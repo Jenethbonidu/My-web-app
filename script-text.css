@@ -1,0 +1,110 @@
+/* Basic styles for alignment and aesthetics */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87018e;
+    /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(247, 167, 236);
+    /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    /* Max width for content */
+}
+
+h1 {
+    color: #6a1b9a;
+    /* Purple color for the heading */
+}
+
+#drop-area {
+    border: 2px dashed #6a1b9a;
+    /* Dashed border for drag and drop area */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    /* Margin around drop area */
+    text-align: center;
+    /* Center text */
+    position: relative;
+    /* Position for inner elements */
+}
+
+.upload-label {
+    display: inline-block;
+    /* Allow for block styling */
+    margin-top: 10px;
+    /* Space above the label */
+    color: #6a1b9a;
+    /* Purple color */
+    cursor: pointer;
+    /* Pointer cursor for label */
+}
+
+.upload-icon {
+    font-size: 2em;
+    /* Increase icon size */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    margin: 10px 0;
+    /* Margin around buttons */
+}
+
+.btn {
+    margin: 0 10px;
+    /* Spacing between buttons */
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #6a1b9a;
+    /* Purple background */
+    color: white;
+    /* White text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth color transition */
+}
+
+.btn:hover {
+    background-color: #8e24aa;
+    /* Darker purple on hover */
+}
+
+.result-frame {
+    margin-top: 20px;
+    /* Space above the results */
+    padding: 10px;
+    border: 2px solid #6a1b9a;
+    /* Purple border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f3e5f5;
+    /* Light purple background */
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.1em;
+    /* Slightly larger text */
+    color: #333;
+    /* Dark text color */
+    white-space: pre-wrap;
+    /* Preserve whitespace and line breaks */
+}
+

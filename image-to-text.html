@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Extractor</title>
+    <link rel="stylesheet" href="script-text.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Text Extractor</h1>
+
+        <!-- Drag and Drop Section -->
+        <div id="drop-area">
+            <p>Drag & drop an image file here or</p>
+            <label class="upload-label" for="imageInput">
+                <span class="upload-icon">📷</span> Upload Image
+            </label>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Language Selection Buttons -->
+        <div class="button-container">
+            <button class="btn" data-lang="eng" onclick="extractText('eng')">Extract English Text</button>
+            <button class="btn" data-lang="sin" onclick="extractText('sin')">Extract Sinhala Text</button>
+        </div>
+
+        <!-- Result Display Frame -->
+        <div class="result-frame">
+            <h2>Extracted Text:</h2>
+            <div id="loading" class="loading" style="display: none;">Loading...</div>
+            <div id="result">Extracted text will appear here...</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+    <script src="script-text.js"></script>
+</body>
+
+</html>
